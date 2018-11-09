@@ -1,0 +1,102 @@
+// ---------- Settings -----------
+$default-line-height: 20%
+$main-color: #606c76
+$second-color: #0099CC
+$pdf-size: Letter
+$pdf-margin: 1.3cm
+// -------------------------------
+
+@page
+  size: $pdf-size
+  margin: $pdf-margin
+
+body
+  font-family: 'PT Serif'
+  font-size: 14px
+  color: $main-color
+
+p
+  line-height: $default-line-height
+
+.wrapper
+  position: relative
+
+.from
+  float: left
+  p
+    line-height: $default-line-height + 15%
+
+.invoice-title
+  float: right
+
+  h1
+    font-weight: 400
+    font-size: 40px
+    letter-spacing: 7px
+    text-transform: uppercase
+    line-height: 20%
+    color: $second-color
+  p
+    text-align: right
+    font-size: 1.05rem
+
+.to
+  position: absolute
+  top: 120px
+
+  p
+    font-size: 1.1em
+
+.invoice
+  position: absolute
+  top: 290px
+  width: 100%
+
+  td,th
+    padding: 12px
+
+.table-title
+  background-color: $second-color
+  font-family: 'Open Sans', sans-serif
+  color: #ffffff
+  text-transform: uppercase
+  padding: 0 10px
+
+  &.infos
+    font-size: 1.2rem
+    padding-top: 12px
+    height: 25px
+
+.invoice-lines
+  margin-top: 50px
+  th
+    background-color: $second-color
+    color: #ffffff
+    border-bottom: none
+
+.signature
+  position: fixed
+  bottom: 30px
+
+// Table
+table
+  border-collapse: collapse
+
+th
+  font-family: 'Open Sans', sans-serif
+  text-transform: uppercase
+  font-weight: 400
+
+th, td
+  padding-top: 15px
+  padding-bottom: 15px
+
+// Helpers
+.left
+  float: left
+
+.right
+  float: right
+
+.no-border
+  border-bottom: none
