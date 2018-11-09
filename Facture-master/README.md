@@ -1,9 +1,7 @@
 Facture
 -------
-Web app written in Python and [Flask](http://flask.pocoo.org/) to quickly generate invoices. 
+Web app written in Python and [Flask](http://flask.pocoo.org/) to quickly generate invoices. Adding ability to save invoices to server and allow users to create custom invoice design.
 
-### Why? 
 
-My goal was to learn Flask framework. 
 
-And of course, use this app to generate invoices for our school photo club @[ClubReflets](https://github.com/ClubReflets)
+
